@@ -1,2 +1,12 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import logo from '$lib/images/logo-full.svg';
+</script>
+
+<div class="flex h-[calc(100vh-4rem)] w-screen items-center justify-center">
+	<div>
+		<img src={logo} alt="duggup" class="h-24" />
+		<div class="flex justify-end">
+			<a href="/profile" class="underline">Profile</a>
+		</div>
+	</div>
+</div>
