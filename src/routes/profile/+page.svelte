@@ -1,5 +1,7 @@
 <script class="ts">
+	import ProfileHead from '$lib/components/block/profile/head.svelte';
+
 	export let data;
 </script>
 
-{JSON.stringify(data, null, 2)}
+<ProfileHead profile={data.profile} />
