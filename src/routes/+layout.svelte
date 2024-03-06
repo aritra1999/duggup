@@ -1,5 +1,9 @@
 <script>
+	import Navbar from '$lib/components/block/navbar/navbar.svelte';
 	import '../app.pcss';
 </script>
 
-<slot />
+<Navbar />
+<div class="container">
+	<slot />
+</div>
