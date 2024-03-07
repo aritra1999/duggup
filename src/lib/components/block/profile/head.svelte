@@ -11,7 +11,7 @@
 			<div class=" flex flex-col items-center">
 				<img
 					src={profile.avatar}
-					class="mb-2 h-32 w-32 rounded-full border-4 border-zinc-100"
+					class="mb-2 h-32 w-32 rounded-full border-4 border-slate-200"
 					alt="avatar"
 				/>
 				<div>
@@ -27,7 +27,7 @@
 			<div class="mb-4 flex flex-col items-end">
 				<img src={profile.organization.logo} alt="organization" class="h-9 w-9 rounded-full" />
 				<h5>{profile.organization.name}</h5>
-				<p class="text-sm text-zinc-400">{profile.organization.role}</p>
+				<p class="text-xs text-muted-foreground">{profile.organization.role}</p>
 			</div>
 			<div class="flex items-center justify-between text-zinc-500">
 				<a
@@ -38,7 +38,7 @@
 					My Website
 					<ExternalLink class="ml-2 h-5 w-5" />
 				</a>
-				<Button variant="ghost" class="px-0"><MoreHorizontal class="h-5 w-5" /></Button>
+				<Button variant="ghost" size="icon"><MoreHorizontal class="h-5 w-5" /></Button>
 			</div>
 		</div>
 	</div>
