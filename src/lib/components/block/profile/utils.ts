@@ -23,13 +23,13 @@ export interface ExperienceActivity extends Activity {
 export const convertDate = (date: Date): string => {
 	const options: Intl.DateTimeFormatOptions = {
 		year: 'numeric',
-		month: 'long'
+		month: 'short'
 	};
 	return date.toLocaleDateString('en-US', options);
 };
 
 export const groupActivity = (activities: (BlogActivity | ExperienceActivity)[]) => {
-	const activityMap: Record<string, Activity[]> = {};
+	const activityMap: Record<string, (BlogActivity | ExperienceActivity)[]> = {};
 
 	for (const activity of activities) {
 		try {
