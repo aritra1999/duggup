@@ -5,10 +5,10 @@
 @layer base {
 	:root {
 		--background: 240 100% 99%;
-		--foreground: 240 10% 3.9%;
+		--foreground: 210 9% 9%;
 
 		--muted: 240 4.8% 95.9%;
-		--muted-foreground: 240 3.8% 46.1%;
+		--muted-foreground: 194 13% 54%;
 
 		--popover: 0 0% 100%;
 		--popover-foreground: 240 10% 3.9%;
@@ -16,7 +16,7 @@
 		--card: 0 0% 100%;
 		--card-foreground: 240 10% 3.9%;
 
-		--border: 240 5.9% 90%;
+		--border: 217 16% 84%;
 		--input: 240 5.9% 90%;
 
 		--primary: 240 5.9% 10%;
@@ -76,6 +76,8 @@
 	body {
 		@apply bg-background text-foreground;
 		font-family: 'Inter', sans-serif;
+		font-weight: 400;
+		letter-spacing: 0em;
 	}
 
 	h1,
@@ -83,8 +85,8 @@
 	h3,
 	h4,
 	h5 {
-		/* font-family: 'Space Grotesk', sans-serif; */
 		@apply font-semibold;
+		color: #4b5c6d;
 	}
 
 	h1 {
