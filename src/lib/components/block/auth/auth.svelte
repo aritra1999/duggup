@@ -15,7 +15,7 @@
 {#if session}
 	<DropdownMenu.Root>
 		<DropdownMenu.Trigger asChild let:builder>
-			<Button variant="ghost" builders={[builder]} class="relative space-x-4 rounded-full">
+			<Button variant="ghost" builders={[builder]} class="relative space-x-4 rounded-full px-2">
 				<Avatar.Root class="mr-4 h-8 w-8">
 					<Avatar.Image src={session.avatar} alt="@{session.name}" />
 					<Avatar.Fallback>{generateInitials(session.name)}</Avatar.Fallback>
