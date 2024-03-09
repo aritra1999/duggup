@@ -17,7 +17,7 @@
 			<img src={c1} alt="" class="z-40 h-3 w-3" />
 		</div>
 		<div class="right-container pb-3 pt-6">
-			<div class="columns-3xs gap-9">
+			<div class="columns-2xs gap-9">
 				{#each activities as activity}
 					<Card.Root class="mb-9 last:mb-0">
 						<img src={activity.thumbnail} alt="" class="h-32 w-full rounded-t-lg object-cover" />
