@@ -10,7 +10,7 @@
 
 <div
 	class={cn(
-		'w-full break-inside-avoid rounded-lg border-border bg-card text-card-foreground shadow-sm',
+		'w-full break-inside-avoid rounded-lg border border-border border-opacity-50 bg-card text-card-foreground shadow-sm',
 		className
 	)}
 	{...$$restProps}

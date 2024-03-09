@@ -6,6 +6,10 @@
 </script>
 
 <div class="flex flex-col items-start">
-	<ProfileHead profile={data.profile} />
-	<Activity activityMap={data.activity} />
+	<section class="w-full lg:w-11/12">
+		<ProfileHead profile={data.profile} />
+	</section>
+	<section class="w-full lg:w-10/12">
+		<Activity activityMap={data.activity} />
+	</section>
 </div>
