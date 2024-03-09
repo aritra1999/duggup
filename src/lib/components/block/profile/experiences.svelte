@@ -26,7 +26,9 @@
 				<div class="text-xs">{timeStamp}</div>
 			</div>
 			<div class="middle-container relative">
-				<ChevronUp class="absolute -top-16 left-[13px] h-4 w-4 text-muted-foreground" />
+				<ChevronUp
+					class="absolute -top-16 left-[calc(50%-1px)] h-4 w-4 -translate-x-1/2 text-muted-foreground"
+				/>
 				<img src={c2} alt="" class="z-40 h-5 w-5 text-muted-foreground" />
 			</div>
 			<div class="right-container flex h-40 items-center">
