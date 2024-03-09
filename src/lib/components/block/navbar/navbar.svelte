@@ -8,7 +8,7 @@
 	import Auth from '$lib/components/block/auth/auth.svelte';
 </script>
 
-<div class="fixed z-50 h-16 w-screen bg-background">
+<navbar class="fixed z-50 h-16 w-screen bg-background">
 	<div
 		class="container flex h-full items-center justify-between border-b border-dotted border-zinc-300"
 	>
@@ -41,4 +41,4 @@
 			</div>
 		</div>
 	</div>
-</div>
+</navbar>
