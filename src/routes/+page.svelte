@@ -2,7 +2,7 @@
 	import logo from '$lib/images/logo-full.svg';
 </script>
 
-<div class="flex h-[calc(100vh-4rem)] w-screen items-center justify-center">
+<div class="flex h-[calc(100vh-5rem)] w-full items-center justify-center">
 	<div>
 		<img src={logo} alt="duggup" class="h-24" />
 		<div class="flex justify-end">
