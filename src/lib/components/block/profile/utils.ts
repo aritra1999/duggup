@@ -1,21 +1,23 @@
 export interface Activity {
 	id: number;
+	date: Date;
 }
 
 export interface BlogActivity extends Activity {
 	type: 'blog';
 	thumbnail: string;
 	description: string;
-	date: Date;
 }
 
 export interface ExperienceActivity extends Activity {
 	type: 'experience';
-	joined: Date;
+	action: 'joined' | 'left';
+	role: string;
+	workingHours: string;
+	location: string;
 	organization: {
 		name: string;
 		location: string;
-		role: string;
 		logo: string;
 	};
 }
@@ -33,7 +35,7 @@ export const groupActivity = (activities: (BlogActivity | ExperienceActivity)[])
 
 	for (const activity of activities) {
 		try {
-			const date = convertDate(activity.type === 'blog' ? activity.date : activity.joined);
+			const date = convertDate(activity.date);
 			if (activityMap[date]) {
 				activityMap[date].push(activity);
 			} else {

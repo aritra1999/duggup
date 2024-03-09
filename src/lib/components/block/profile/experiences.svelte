@@ -20,8 +20,8 @@
 						class="mb-2 h-10 w-10 rounded-full"
 					/>
 					<span class="text-md font-bold text-slate-900">{activity.organization.name}</span>
-					<p class="text-xs">{activity.organization.role}</p>
-					<p class="text-xs">Joined</p>
+					<p class="text-xs">{activity.organization.location}</p>
+					<p class="text-xs capitalize">{activity.action}</p>
 				</div>
 				<div class="text-xs">{timeStamp}</div>
 			</div>
@@ -34,8 +34,10 @@
 			<div class="right-container flex h-40 items-center">
 				<Card.Root class="border-0">
 					<Card.Content>
-						<h5>{activity.organization.role}</h5>
-						<p class="text-xs text-muted-foreground">Full Time, Remote</p>
+						<h5>{activity.role}</h5>
+						<p class="text-xs text-muted-foreground">
+							{activity.workingHours}, {activity.location}
+						</p>
 					</Card.Content>
 				</Card.Root>
 			</div>

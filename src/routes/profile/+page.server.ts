@@ -49,33 +49,42 @@ const mockBlogActivity: (BlogActivity | ExperienceActivity)[] = [
 	{
 		id: 5,
 		type: 'experience',
-		joined: new Date('2023-12-01'),
+		action: 'joined',
+		date: new Date('2023-12-01'),
+		role: 'Software Development Engineer',
+		workingHours: 'Full time',
+		location: 'Bonn, Germany',
 		organization: {
 			name: 'LeanIX',
 			location: 'Bonn, Germany',
-			role: 'Software Engineer',
 			logo: 'https://www.leanix.net/hs-fs/hubfs/Downloads/Homepage%20banner/Web_LatestUpdate.png?width=1343&height=1603&name=Web_LatestUpdate.png'
 		}
 	},
 	{
 		id: 5,
 		type: 'experience',
-		joined: new Date('2023-12-01'),
+		date: new Date('2023-12-01'),
+		action: 'joined',
+		role: 'Software Development Engineer',
+		workingHours: 'Full time',
+		location: 'Hyderabad, India',
 		organization: {
 			name: 'LeanIX',
-			location: 'Bonn, Germany',
-			role: 'Software Engineer',
+			location: 'Hyderabad, India',
 			logo: 'https://www.leanix.net/hs-fs/hubfs/Downloads/Homepage%20banner/Web_LatestUpdate.png?width=1343&height=1603&name=Web_LatestUpdate.png'
 		}
 	},
 	{
 		id: 6,
 		type: 'experience',
-		joined: new Date('2023-11-12'),
+		date: new Date('2023-11-12'),
+		action: 'joined',
+		role: 'Software Engineering Intern',
+		workingHours: 'Full time',
+		location: 'Remote',
 		organization: {
 			name: 'LeanIX',
 			location: 'Bonn, Germany',
-			role: 'Software Engineer',
 			logo: 'https://www.leanix.net/hs-fs/hubfs/Downloads/Homepage%20banner/Web_LatestUpdate.png?width=1343&height=1603&name=Web_LatestUpdate.png'
 		}
 	}
